@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartinha Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-container">
+            <h3 class="music-title">Sua Música</h3>
+            <iframe src="https://open.spotify.com/embed/track/1DLKuppSYytOuxhtI6KBGu?si=2lIA8t-LRFmhkcmE9gF-Bw"
+                width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <div class="carousel-container">
+            <div id="carousel" class="carousel">
+                <img class="carousel-image" src="Imagens/foto1.jpg" alt="foto1">
+                <img class="carousel-image" src="Imagens/foto2.jpg" alt="foto2">
+                <img class="carousel-image" src="Imagens/foto3.jpg" alt="foto3">
+                <img class="carousel-image" src="Imagens/foto4.jpg" alt="foto4">
+                <img class="carousel-image" src="Imagens/foto5.jpg" alt="foto5">
+            </div>
+        </div>
+
+        <div class="text-container">
+            <div class="message">
+                <p>Pra você, meu amor</p>
+                <p>Eu sei que estamos em um momento difícil, mas não quero que você se esqueça do quanto você significa pra mim. Cada momento que passamos juntos foi especial e, mesmo agora, eu guardo tudo com muito carinho no coração. ❤️</p>
+                <p>Eu te amo muito e tô muito orgulhoso de você e grato por tudo o que vivemos. Mesmo com a distância, você ainda está no meu pensamento e no meu coração.</p>
+                <p>Desculpa não ser igual antes, quando eu demonstrava mais, perguntava mais, me preocupava mais, te elogiava mais, te ouvia mais, mas as coisas estão mudando e não sei. Só talvez a gente não se encontre mais e siga caminhos diferentes, então, me desculpa, ok? Mas eu vou dar uma sumida por um tempo.</p>
+                <p>Eu só quero que saiba que desejo que você seja muito feliz, sempre. Espero que dê tudo certo pra você, e se algum dia der na telha, a gente vai acabar se encontrando, enfim. Byeee meu bem ❤️‍🩹</p>
+                <p>Eu te amo ❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Carrossel
+        let index = 0;
+        const images = document.querySelectorAll(".carousel-image");
+        setInterval(function() {
+            images[index].style.display = "none";
+            index = (index + 1) % images.length;
+            images[index].style.display = "block";
+        }, 3000); // Troca de imagem a cada 3 segundos
+    </script>
+</body>
+</html>
