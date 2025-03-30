@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Cartinha</title>
+    <style>
+        /* Definindo o fundo escuro */
+        body {
+            background-color: #222222;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Moldura das imagens e da música */
+        .moldura {
+            background-color: rgba(169, 169, 169, 0.3); /* Moldura cinza com transparência */
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        /* Carrossel de imagens */
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        /* Estilo para o player da música */
+        .player {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .player iframe {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+            height: 80px;
+        }
+
+        /* Texto da carta */
+        .carta {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Player da Música -->
+        <div class="player moldura">
+            <iframe src="https://open.spotify.com/embed/track/1DLKuppSYytOuxhtI6KBGu?si=2lIA8t-LRFmhkcmE9gF-Bw" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <!-- Carrossel de Imagens -->
+        <div class="carousel">
+            <div class="moldura">
+                <img src="Imagens/foto1.jpg" alt="Foto 1">
+            </div>
+            <div class="moldura">
+                <img src="Imagens/foto2.jpg" alt="Foto 2">
+            </div>
+            <div class="moldura">
+                <img src="Imagens/foto3.jpg" alt="Foto 3">
+            </div>
+            <div class="moldura">
+                <img src="Imagens/foto4.jpg" alt="Foto 4">
+            </div>
+            <div class="moldura">
+                <img src="Imagens/foto5.jpg" alt="Foto 5">
+            </div>
+        </div>
+
+        <!-- Texto da Carta -->
+        <div class="carta">
+            <p><strong>Pra você, meu amor</strong></p>
+            <p>Eu sei que estamos em um momento difícil, mas não quero que você se esqueça do quanto você significa pra mim. Cada momento que passamos juntos foi especial e, mesmo agora, eu guardo tudo com muito carinho no coração. ❤️</p>
+            <p>Eu te amo muito e tô muito orgulhoso de vc e grato por tudo o que vivemos. Mesmo com a distância, você ainda está no meu pensamento e no meu coração.</p>
+            <p>Desculpa não ser igual antes, quando eu demonstrava mais, perguntava mais, me preocupava mais, te elogiava mais, te ouvia mais, mas as coisas estão mudando e não sei. Só talvez a gente não se encontre mais e siga caminhos diferentes, então, me desculpa ok? Mas eu vou dar uma sumida por um tempo.</p>
+            <p>Eu só quero que saiba que desejo que você seja muito feliz, sempre. Espero que dê tudo certo pra você, e se algum dia der na telha, a gente vai acabar se encontrando, enfim. Byeee meu bem ❤️‍🩹</p>
+            <p>Eu te amo ❤️</p>
+        </div>
+    </div>
+
+</body>
+</html>
